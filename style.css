@@ -4,13 +4,21 @@ body{
     margin: 0;
     font-family: "roboto", sans-serif;
 }
+
+h1{
+    margin: 0em;
+    padding: 0.3em;
+}
+
 header{
     font-family: 'Shrikhand', cursive;
     text-align: center;
     box-shadow: 0em 0.15em 0.1em grey;
-    padding: 0.3rem;
+    padding: 0rem;
     position: relative;
 }
+
+
 
 main .city {
     display: flex;
@@ -19,5 +27,35 @@ main .city {
     gap: 1rem;
     background-color: #f3f3f3;
     text-align: center;
-    padding: 0.5rem;
+    font-size: 0.8rem;
+    
 }
+
+
+
+/* EXPLORE */
+.explore{
+    padding: 2rem;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.explore h2{
+    font-size: 1.5rem;
+}
+
+.explore p{
+    font-size: 1rem;
+}
+
+.explore button{
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(#FF79DA,#9356DC);
+    margin-top: 0.5rem;
+}
+
+/* -------------- */
