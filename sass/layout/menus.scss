@@ -1,7 +1,7 @@
 .menus {
   background-color: #f6f6f6;
 
-  h2{
+  h2 {
     padding: 1rem;
   }
 }
@@ -12,16 +12,16 @@
   flex-direction: column;
   padding: 1rem;
 
-  .new{
+  .new {
     position: relative;
   }
 
-  .new::before{
+  .new::before {
     content: "Nouveau";
     position: absolute;
     height: 2rem;
     width: 5rem;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,26 +36,26 @@
     background-size: cover;
     height: 15rem;
   }
-  @for $i from 1 through 4{
-      &_img-#{$i} {
-        background-image: url("/img/menu-#{$i}.jpg");
-      }
+  @for $i from 1 through 4 {
+    &_img-#{$i} {
+      background-image: url("/img/menu-#{$i}.jpg");
+    }
   }
 
-  &_description{
+  &_description {
     background: white;
     position: relative;
     margin: 0rem;
     border-radius: 0 0 2rem 2rem;
     padding: 0.5rem;
     position: relative;
-    h3{
+    h3 {
       margin: 0.5rem;
     }
-    p{
+    p {
       margin: 0.5rem;
     }
-    i{
+    i {
       font-size: 2rem;
       position: absolute;
       right: 1rem;

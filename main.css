@@ -2,140 +2,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 body {
   margin: 0;
-  font-family: "roboto", sans-serif;
-}
+  font-family: "roboto", sans-serif; }
 
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 h1 {
   margin: 0em;
-  padding: 0.3em;
-}
+  padding: 0.3em; }
 
 .city {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   background-color: #f3f3f3;
   text-align: center;
-  font-size: 0.8rem;
-}
+  font-size: 0.8rem; }
 
 .explore {
   padding: 2rem;
   background-color: #fafafa;
-  text-align: center;
-}
-
-.explore h2 {
-  font-size: 1.5rem;
-}
-
-.explore p {
-  font-size: 1rem;
-}
-
-.explore button {
-  color: white;
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 2rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(#ff79da, #9356dc);
-  margin-top: 0.5rem;
-}
+  text-align: center; }
+  .explore h2 {
+    font-size: 1.5rem; }
+  .explore p {
+    font-size: 1rem; }
+  .explore button {
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    margin-top: 0.5rem; }
 
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
-  -webkit-box-shadow: 0em 0.15em 0.1em grey;
-          box-shadow: 0em 0.15em 0.1em grey;
+  box-shadow: 0em 0.15em 0.1em grey;
   padding: 0rem;
-  position: relative;
-}
+  position: relative; }
 
 .functioning h2 {
-  padding: 1rem;
-}
+  padding: 1rem; }
 
 .menus {
-  background-color: #f6f6f6;
-}
-
-.menus h2 {
-  padding: 1rem;
-}
+  background-color: #f6f6f6; }
+  .menus h2 {
+    padding: 1rem; }
 
 .menus_cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1rem;
-}
-
-.menus_cards .new {
-  position: relative;
-}
-
-.menus_cards .new::before {
-  content: "Nouveau";
-  position: absolute;
-  height: 2rem;
-  width: 5rem;
-  background-color: #99E2D0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  right: 1rem;
-  top: 1rem;
-  border-radius: 0.5rem;
-}
+  flex-direction: column;
+  padding: 1rem; }
+  .menus_cards .new {
+    position: relative; }
+  .menus_cards .new::before {
+    content: "Nouveau";
+    position: absolute;
+    height: 2rem;
+    width: 5rem;
+    background-color: #99e2d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 1rem;
+    top: 1rem;
+    border-radius: 0.5rem; }
 
 .card_img {
   border-radius: 2rem 2rem 0 0;
   background-size: cover;
-  height: 15rem;
-}
+  height: 15rem; }
 
 .card_img-1 {
-  background-image: url("/img/menu-1.jpg");
-}
+  background-image: url("/img/menu-1.jpg"); }
 
 .card_img-2 {
-  background-image: url("/img/menu-2.jpg");
-}
+  background-image: url("/img/menu-2.jpg"); }
 
 .card_img-3 {
-  background-image: url("/img/menu-3.jpg");
-}
+  background-image: url("/img/menu-3.jpg"); }
 
 .card_img-4 {
-  background-image: url("/img/menu-4.jpg");
-}
+  background-image: url("/img/menu-4.jpg"); }
 
 .card_description {
   background: white;
@@ -143,23 +97,14 @@ header {
   margin: 0rem;
   border-radius: 0 0 2rem 2rem;
   padding: 0.5rem;
-  position: relative;
-}
-
-.card_description h3 {
-  margin: 0.5rem;
-}
-
-.card_description p {
-  margin: 0.5rem;
-}
-
-.card_description i {
-  font-size: 2rem;
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-/*# sourceMappingURL=main.css.map */
+  position: relative; }
+  .card_description h3 {
+    margin: 0.5rem; }
+  .card_description p {
+    margin: 0.5rem; }
+  .card_description i {
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%); }
