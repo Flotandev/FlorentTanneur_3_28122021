@@ -62,6 +62,12 @@ header {
     flex-direction: column;
     padding: 1rem;
     padding-top: 0; }
+    @media screen and (min-width: 1024px) {
+      .functioning ol {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; } }
   .functioning li {
     position: relative;
     background-color: #f6f6f6;
@@ -70,6 +76,19 @@ header {
     margin: 0.5rem;
     list-style-type: none;
     box-shadow: 4px 4px 4px #7e7e7e; }
+    @media screen and (min-width: 1024px) {
+      .functioning li {
+        position: relative;
+        background-color: #f6f6f6;
+        padding: 1.5rem;
+        align-items: center;
+        font-size: 1rem;
+        width: 100%;
+        border-radius: 1rem;
+        margin: 0.5rem;
+        list-style-type: none;
+        box-shadow: 4px 4px 4px #7e7e7e;
+        margin-right: 2rem; } }
     .functioning li::before {
       content: "" counter(counter);
       counter-increment: counter;
@@ -99,7 +118,12 @@ header {
     @media screen and (min-width: 1024px) {
       .menus .menus_cards {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); } }
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        justify-content: center; }
+        .menus .menus_cards .card {
+          display: grid; } }
     .menus .menus_cards .new {
       position: relative; }
     .menus .menus_cards .new::before {
@@ -119,6 +143,7 @@ header {
     .menus .card_img {
       border-radius: 2rem 2rem 0 0;
       background-size: cover;
+      width: 100%;
       height: 15rem; }
     .menus .card_img-1 {
       background-image: url("/img/menu-1.jpg"); }
