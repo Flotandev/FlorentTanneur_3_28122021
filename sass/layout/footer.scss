@@ -1,0 +1,21 @@
+footer {
+    background-color: #353535;
+    padding: 1.5rem;
+    color: white;
+
+    & h2{
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        
+    }
+
+    & p {
+        margin: 0.5rem;
+        margin-left: 0;
+    }
+
+    & i {
+        margin-right: 0.5rem;
+    }
+}

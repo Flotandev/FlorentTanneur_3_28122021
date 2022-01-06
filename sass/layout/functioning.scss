@@ -1,5 +1,42 @@
-.functioning{
-    h2{
-        padding: 1rem;
+
+.functioning {
+  counter-reset: counter;
+  h2 {
+    padding: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  & ol {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 0;
+  }
+  & li {
+    &::before {
+      content: "" counter(counter);
+      counter-increment: counter;
+      color: white;
+      background-color: #9356dc;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      position: absolute;
+      left: -0.8rem;
     }
+    position: relative;
+    background-color: #f6f6f6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    list-style-type: none;
+    box-shadow: 4px 4px 4px #7e7e7e;
+  }
+
+  & i.fas {
+    margin-right: 1rem;
+    color: #7e7e7e;
+  }
 }
