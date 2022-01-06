@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 body {
-  margin: 0;
-  font-family: "roboto", sans-serif; }
+  font-family: "roboto", sans-serif;
+  margin: 0; }
 
 *,
 ::before,
@@ -12,6 +12,11 @@ body {
 h1 {
   margin: 0em;
   padding: 0.3em; }
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative; }
 
 .city {
   display: flex;
@@ -84,63 +89,62 @@ header {
 .menus {
   background-color: #f6f6f6; }
   .menus h2 {
-    padding: 1rem; }
-
-.menus_cards {
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  padding: 1rem;
-  padding-bottom: 3rem; }
-  .menus_cards .new {
-    position: relative; }
-  .menus_cards .new::before {
-    content: "Nouveau";
-    position: absolute;
-    height: 2rem;
-    width: 5rem;
-    background-color: #99e2d0;
+    padding: 1rem;
+    margin-bottom: 0; }
+  .menus .menus_cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 1rem;
-    top: 1rem;
-    border-radius: 0.5rem; }
-
-.card_img {
-  border-radius: 2rem 2rem 0 0;
-  background-size: cover;
-  height: 15rem; }
-
-.card_img-1 {
-  background-image: url("/img/menu-1.jpg"); }
-
-.card_img-2 {
-  background-image: url("/img/menu-2.jpg"); }
-
-.card_img-3 {
-  background-image: url("/img/menu-3.jpg"); }
-
-.card_img-4 {
-  background-image: url("/img/menu-4.jpg"); }
-
-.card_description {
-  background: white;
-  position: relative;
-  margin: 0rem;
-  border-radius: 0 0 2rem 2rem;
-  padding: 0.5rem;
-  position: relative; }
-  .card_description h3 {
-    margin: 0.5rem; }
-  .card_description p {
-    margin: 0.5rem; }
-  .card_description i {
-    font-size: 2rem;
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%); }
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 3rem; }
+    @media screen and (min-width: 1024px) {
+      .menus .menus_cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); } }
+    .menus .menus_cards .new {
+      position: relative; }
+    .menus .menus_cards .new::before {
+      content: "Nouveau";
+      position: absolute;
+      height: 2rem;
+      width: 5rem;
+      background-color: #99e2d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 1rem;
+      top: 1rem;
+      border-radius: 0.5rem; }
+  .menus .card {
+    padding-bottom: 1rem; }
+    .menus .card_img {
+      border-radius: 2rem 2rem 0 0;
+      background-size: cover;
+      height: 15rem; }
+    .menus .card_img-1 {
+      background-image: url("/img/menu-1.jpg"); }
+    .menus .card_img-2 {
+      background-image: url("/img/menu-2.jpg"); }
+    .menus .card_img-3 {
+      background-image: url("/img/menu-3.jpg"); }
+    .menus .card_img-4 {
+      background-image: url("/img/menu-4.jpg"); }
+    .menus .card_description {
+      background: white;
+      position: relative;
+      margin: 0rem;
+      border-radius: 0 0 2rem 2rem;
+      padding: 0.5rem;
+      position: relative; }
+      .menus .card_description h3 {
+        margin: 0.5rem; }
+      .menus .card_description p {
+        margin: 0.5rem; }
+      .menus .card_description i {
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%); }
 
 footer {
   background-color: #353535;
@@ -155,3 +159,57 @@ footer {
     margin-left: 0; }
   footer i {
     margin-right: 0.5rem; }
+
+.container_imgtop {
+  background-image: url("/img/menu-1.jpg");
+  width: 100%;
+  height: 15rem;
+  background-size: cover; }
+
+.header_menu {
+  background-color: #f6f6f6;
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 1rem;
+  margin-top: -4rem; }
+
+.submenu {
+  background-color: #f6f6f6; }
+  .submenu .card_submenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    margin-top: 0rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.75rem; }
+    .submenu .card_submenu .card_desc {
+      width: 280px; }
+    .submenu .card_submenu .price {
+      display: grid;
+      justify-content: flex-end;
+      align-items: flex-end; }
+  .submenu h4 {
+    margin: 0;
+    margin-bottom: 0.5rem; }
+  .submenu h3 {
+    margin: 1rem;
+    margin-top: 0;
+    padding-top: 2rem; }
+  .submenu p {
+    margin: 0; }
+  .submenu .button_submenu {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    margin-top: -1rem; }
+  .submenu button {
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    margin-top: 0.5rem; }
+
+.container_submenu {
+  background-color: #f6f6f6; }
