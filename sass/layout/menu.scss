@@ -7,8 +7,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .submenus{
-    grid-template-columns: repeat(3,1fr);
+  .submenus {
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
     display: grid;
   }
@@ -39,7 +39,6 @@
 
     & .card_desc {
       width: 250px;
-     
     }
     & .price {
       display: grid;
@@ -62,25 +61,23 @@
   & p {
     margin: 0;
     text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
   }
-
- 
 }
 
 .container_submenu {
   background-color: #f6f6f6;
 }
 
- .button_submenu {
+.button_submenu {
   display: flex;
   justify-content: center;
   padding: 3rem;
   margin-top: -1rem;
 }
 
- button {
+button {
   color: white;
   font-size: 1rem;
   padding: 1rem 2rem;
