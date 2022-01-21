@@ -22,12 +22,12 @@ h1 {
   display: grid;
   place-items: center;
   background-color: #f6f6f6;
-  position: fixed;
   inset: 0;
+  position: fixed;
   height: 100vh;
   z-index: 100;
   opacity: 0.9;
-  animation: disappear 5s;
+  animation: disappear 3s;
   animation-fill-mode: forwards; }
 
 @keyframes disappear {
@@ -154,6 +154,9 @@ header {
   .menus h2 {
     padding: 1rem;
     margin-bottom: 0; }
+  .menus a {
+    color: black;
+    text-decoration: none; }
   .menus .menus_cards {
     display: flex;
     flex-direction: column;
