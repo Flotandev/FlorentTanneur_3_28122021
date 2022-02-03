@@ -56,7 +56,7 @@ h1 {
 
 @keyframes appear {
   0% {
-    transform: translateY(50%);
+    transform: translateY(100%);
     opacity: 0; }
   100% {
     transform: translateY(0);
@@ -217,6 +217,16 @@ header {
         right: 1rem;
         top: 50%;
         transform: translateY(-50%); }
+      .menus .card_description .fas {
+        color: transparent;
+        background-image: linear-gradient(#ff79da, #9356dc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: 500ms; }
+      .menus .card_description .fas:hover {
+        opacity: 1;
+        transform: scale(1.1) translateY(-45%); }
 
 footer {
   background-color: #353535;
@@ -243,7 +253,12 @@ footer {
   border-radius: 2.5rem 2.5rem 0 0;
   padding: 1rem;
   margin-top: -4rem;
-  margin-bottom: -2rem; }
+  margin-bottom: -2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header_menu .far {
+    font-size: 2rem; }
 
 @media screen and (min-width: 1024px) {
   .submenus {
@@ -258,29 +273,64 @@ footer {
     width: 2.8rem;
     font-weight: 400; }
   .submenu .card_submenu {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     animation: appear 0.5s;
     animation-fill-mode: both;
-    grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
     margin-top: 0rem;
-    padding: 1rem;
     background-color: white;
-    border-radius: 0.75rem; }
+    border-radius: 0.75rem;
+    overflow: hidden;
+    padding: 1rem;
+    max-width: 100%; }
     .submenu .card_submenu:nth-child(1) {
-      animation-delay: 0.2s; }
-    .submenu .card_submenu:nth-child(2) {
       animation-delay: 0.4s; }
-    .submenu .card_submenu:nth-child(3) {
-      animation-delay: 0.6s; }
-    .submenu .card_submenu:nth-child(4) {
+    .submenu .card_submenu:nth-child(2) {
       animation-delay: 0.8s; }
+    .submenu .card_submenu:nth-child(3) {
+      animation-delay: 1.2s; }
+    .submenu .card_submenu:nth-child(4) {
+      animation-delay: 1.6s; }
     .submenu .card_submenu .card_desc {
-      width: 250px; }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      white-space: nowrap; }
+    .submenu .card_submenu .check {
+      display: flex;
+      margin-right: -4rem; }
+      .submenu .card_submenu .check .fas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #99e2d0;
+        background-color: white;
+        height: 1.6rem;
+        width: 1.6rem;
+        border-radius: 50%; }
     .submenu .card_submenu .price {
-      display: grid;
-      justify-content: flex-end;
-      align-items: flex-end; }
+      display: flex;
+      align-items: flex-end;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; }
+    .submenu .card_submenu .green {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #99e2d0;
+      margin-top: -1rem;
+      margin-bottom: -1rem;
+      margin-right: -1rem;
+      border-radius: 0 1rem 1rem 0;
+      width: 4rem; }
+    .submenu .card_submenu:hover .check {
+      margin-right: 0rem;
+      transition: 0.5s; }
+      .submenu .card_submenu:hover .check .fas {
+        transform: rotate(360deg);
+        transition-duration: 1s; }
   .submenu h4 {
     margin: 0;
     margin-bottom: 0.5rem; }
@@ -288,11 +338,6 @@ footer {
     margin: 1rem;
     margin-top: 0;
     padding-top: 2rem; }
-  .submenu p {
-    margin: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap; }
 
 .container_submenu {
   background-color: #f6f6f6; }
@@ -311,3 +356,13 @@ button {
   border-radius: 2rem;
   background-image: linear-gradient(#ff79da, #9356dc);
   margin-top: 0.5rem; }
+
+.p_description {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.t_description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0; }
