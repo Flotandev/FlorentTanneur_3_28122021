@@ -245,8 +245,10 @@ footer {
 .container_imgtop {
   background-image: url("/img/menu-1.jpg");
   width: 100%;
-  height: 15rem;
-  background-size: cover; }
+  height: 30rem;
+  background-size: cover;
+  max-width: 100%;
+  object-fit: cover; }
 
 .header_menu {
   background-color: #f6f6f6;
@@ -267,7 +269,8 @@ footer {
     display: grid; } }
 
 .submenu {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  display: grid; }
   .submenu_title {
     border-bottom: #99e2d0 solid 0.3rem;
     width: 2.8rem;
@@ -346,7 +349,8 @@ footer {
   display: flex;
   justify-content: center;
   padding: 3rem;
-  margin-top: -1rem; }
+  margin-top: -1rem;
+  background-color: #f6f6f6; }
 
 button {
   color: white;

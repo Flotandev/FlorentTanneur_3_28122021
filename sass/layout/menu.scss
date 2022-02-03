@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
 
-  & .far{
+  & .far {
     font-size: 2rem;
   }
 }
@@ -18,13 +18,11 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
     display: grid;
-
   }
-  
 }
 .submenu {
   background-color: #f6f6f6;
-
+  display: grid;
   &_title {
     border-bottom: #99e2d0 solid 0.3rem;
     width: 2.8rem;
@@ -50,10 +48,10 @@
 
     & .card_desc {
       display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    white-space: nowrap;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      white-space: nowrap;
     }
 
     & .check {
@@ -122,6 +120,7 @@
   justify-content: center;
   padding: 3rem;
   margin-top: -1rem;
+  background-color: #f6f6f6;
 }
 
 button {
@@ -134,13 +133,13 @@ button {
   margin-top: 0.5rem;
 }
 
-.p_description{
+.p_description {
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.t_description{
+.t_description {
   text-overflow: ellipsis;
   overflow: hidden;
   margin: 0;
