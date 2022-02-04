@@ -72,6 +72,8 @@
       p {
         margin: 0.5rem;
       }
+
+      
       i {
         font-size: 2rem;
         position: absolute;
@@ -79,7 +81,7 @@
         top: 50%;
         transform: translateY(-50%);
       }
-
+      
       .fas {
         color: transparent;
         background-image: linear-gradient(#ff79da, #9356dc);
@@ -90,8 +92,8 @@
       }
       .fas:hover {
         opacity: 1;
-        transform: scale(1.1) translateY(-45%);
       }
+
     }
   }
 }
