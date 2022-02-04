@@ -28,7 +28,7 @@
       border-radius: 1rem;
       margin: 0.5rem;
       list-style-type: none;
-      box-shadow: 4px 4px 4px #7e7e7e;
+      @include box-shadow;
       margin-right: 2rem;
     }
 
@@ -56,7 +56,7 @@
     border-radius: 1rem;
     margin: 0.5rem;
     list-style-type: none;
-    box-shadow: 4px 4px 4px #7e7e7e;
+    @include box-shadow;
   }
 
   & i.fas {
@@ -64,3 +64,5 @@
     color: #7e7e7e;
   }
 }
+
+

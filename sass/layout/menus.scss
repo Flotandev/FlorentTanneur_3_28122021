@@ -1,5 +1,6 @@
+
+
 .menus {
-  background-color: #f6f6f6;
   h2 {
     padding: 1rem;
     margin-bottom: 0;
@@ -73,7 +74,6 @@
         margin: 0.5rem;
       }
 
-      
       i {
         font-size: 2rem;
         position: absolute;
@@ -81,19 +81,20 @@
         top: 50%;
         transform: translateY(-50%);
       }
-      
+
       .fas {
         color: transparent;
         background-image: linear-gradient(#ff79da, #9356dc);
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
-        transition: 500ms;
+        transition: 0.5s;
+        transition-duration: 0.75s;
       }
       .fas:hover {
         opacity: 1;
+        transform: scale(1.2) translateY(-45%);
       }
-
     }
   }
 }
