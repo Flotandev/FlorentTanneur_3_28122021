@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: Shrikhand,"cursive";
 
   & .far {
     font-size: 2rem;
@@ -22,14 +23,16 @@
 }
 .submenu {
   background-color: #f6f6f6;
-  display: grid;
+  overflow: hidden;
+
+
   &_title {
     border-bottom: #99e2d0 solid 0.3rem;
     width: 2.8rem;
     font-weight: 400;
   }
   & .card_submenu {
-    @for $i from 1 through 4 {
+    @for $i from 1 through 5 {
       &:nth-child(#{$i}) {
         animation-delay: #{$i * 0.4}s;
       }
@@ -45,6 +48,8 @@
     overflow: hidden;
     padding: 1rem;
     max-width: 100%;
+    box-shadow: 4px 4px 4px #7e7e7e;
+    cursor: pointer;
 
     & .card_desc {
       display: flex;
@@ -74,6 +79,7 @@
       align-items: flex-end;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
+      font-weight: 900;
     }
 
     & .green {
@@ -89,7 +95,7 @@
     }
 
     &:hover .check {
-      margin-right: 0rem;
+      margin-right: -0.3rem;
       transition: 0.5s;
 
       & .fas {
@@ -120,6 +126,7 @@
   padding: 3rem;
   margin-top: -1rem;
   background-color: #f6f6f6;
+ 
 }
 
 button {
@@ -130,6 +137,13 @@ button {
   border-radius: 2rem;
   background-image: linear-gradient(#ff79da, #9356dc);
   margin-top: 0.5rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.2);
+  }
 }
 
 .p_description {

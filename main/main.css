@@ -86,7 +86,12 @@ h1 {
     border: none;
     border-radius: 2rem;
     background-image: linear-gradient(#ff79da, #9356dc);
-    margin-top: 0.5rem; }
+    margin-top: 0.5rem;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+    .explore button:hover {
+      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+      filter: brightness(1.2); }
 
 header {
   font-family: "Shrikhand", cursive;
@@ -94,6 +99,19 @@ header {
   box-shadow: 0em 0.15em 0.1em grey;
   padding: 0rem;
   position: relative; }
+
+.header_arrow {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #000; }
 
 .functioning {
   counter-reset: counter; }
@@ -145,6 +163,9 @@ header {
       border-radius: 50%;
       position: absolute;
       left: -0.8rem; }
+    .functioning li:hover {
+      background-color: #f5edff;
+      cursor: pointer; }
   .functioning i.fas {
     margin-right: 1rem;
     color: #7e7e7e; }
@@ -176,30 +197,25 @@ header {
     .menus .menus_cards .new::before {
       content: "Nouveau";
       position: absolute;
-      height: 2rem;
-      width: 5rem;
+      height: 2.1rem;
+      width: 5.5rem;
+      color: #1b6150;
       background-color: #99e2d0;
       display: flex;
       align-items: center;
       justify-content: center;
       right: 1rem;
       top: 1rem;
-      border-radius: 0.5rem; }
+      border-radius: 0.2rem; }
   .menus .card {
     padding-bottom: 1rem; }
     .menus .card_img {
-      border-radius: 2rem 2rem 0 0;
-      background-size: cover;
+      height: 12rem;
       width: 100%;
-      height: 15rem; }
-    .menus .card_img-1 {
-      background-image: url("/img/menu-1.jpg"); }
-    .menus .card_img-2 {
-      background-image: url("/img/menu-2.jpg"); }
-    .menus .card_img-3 {
-      background-image: url("/img/menu-3.jpg"); }
-    .menus .card_img-4 {
-      background-image: url("/img/menu-4.jpg"); }
+      border: 0 solid transparent;
+      border-radius: 1rem 1rem 0 0;
+      box-shadow: none;
+      object-fit: cover; }
     .menus .card_description {
       background: white;
       position: relative;
@@ -227,6 +243,10 @@ header {
       .menus .card_description .fas:hover {
         opacity: 1;
         transform: scale(1.1) translateY(-45%); }
+
+a {
+  text-decoration: none;
+  color: white; }
 
 footer {
   background-color: #353535;
@@ -256,7 +276,8 @@ footer {
   margin-bottom: -2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  font-family: Shrikhand,"cursive"; }
   .header_menu .far {
     font-size: 2rem; }
 
@@ -268,7 +289,7 @@ footer {
 
 .submenu {
   background-color: #f6f6f6;
-  display: grid; }
+  overflow: hidden; }
   .submenu_title {
     border-bottom: #99e2d0 solid 0.3rem;
     width: 2.8rem;
@@ -284,7 +305,9 @@ footer {
     border-radius: 0.75rem;
     overflow: hidden;
     padding: 1rem;
-    max-width: 100%; }
+    max-width: 100%;
+    box-shadow: 4px 4px 4px #7e7e7e;
+    cursor: pointer; }
     .submenu .card_submenu:nth-child(1) {
       animation-delay: 0.4s; }
     .submenu .card_submenu:nth-child(2) {
@@ -293,6 +316,8 @@ footer {
       animation-delay: 1.2s; }
     .submenu .card_submenu:nth-child(4) {
       animation-delay: 1.6s; }
+    .submenu .card_submenu:nth-child(5) {
+      animation-delay: 2s; }
     .submenu .card_submenu .card_desc {
       display: flex;
       flex-direction: column;
@@ -315,7 +340,8 @@ footer {
       display: flex;
       align-items: flex-end;
       padding-left: 0.5rem;
-      padding-right: 0.5rem; }
+      padding-right: 0.5rem;
+      font-weight: 900; }
     .submenu .card_submenu .green {
       display: flex;
       align-items: center;
@@ -327,7 +353,7 @@ footer {
       border-radius: 0 1rem 1rem 0;
       width: 4rem; }
     .submenu .card_submenu:hover .check {
-      margin-right: 0rem;
+      margin-right: -0.3rem;
       transition: 0.5s; }
       .submenu .card_submenu:hover .check .fas {
         transform: rotate(360deg);
@@ -356,7 +382,12 @@ button {
   border: none;
   border-radius: 2rem;
   background-image: linear-gradient(#ff79da, #9356dc);
-  margin-top: 0.5rem; }
+  margin-top: 0.5rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+  button:hover {
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.2); }
 
 .p_description {
   margin: 0;

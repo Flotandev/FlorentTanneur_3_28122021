@@ -45,6 +45,11 @@
       position: absolute;
       left: -0.8rem;
     }
+
+    &:hover{
+      background-color: #f5edff;
+      cursor: pointer;
+    }
     position: relative;
     background-color: #f6f6f6;
     padding: 1.5rem;
