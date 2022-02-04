@@ -276,7 +276,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Shrikhand,"cursive"; }
+  font-family: Shrikhand, "cursive"; }
   .header_menu .far {
     font-size: 2rem; }
 
@@ -296,7 +296,6 @@ footer {
   .submenu .card_submenu {
     display: flex;
     justify-content: space-between;
-    animation: appear 0.5s;
     animation-fill-mode: both;
     margin: 1rem;
     margin-top: 0rem;
@@ -306,17 +305,8 @@ footer {
     padding: 1rem;
     max-width: 100%;
     box-shadow: 4px 4px 4px #7e7e7e;
-    cursor: pointer; }
-    .submenu .card_submenu:nth-child(1) {
-      animation-delay: 0.4s; }
-    .submenu .card_submenu:nth-child(2) {
-      animation-delay: 0.8s; }
-    .submenu .card_submenu:nth-child(3) {
-      animation-delay: 1.2s; }
-    .submenu .card_submenu:nth-child(4) {
-      animation-delay: 1.6s; }
-    .submenu .card_submenu:nth-child(5) {
-      animation-delay: 2s; }
+    cursor: pointer;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); }
     .submenu .card_submenu .card_desc {
       display: flex;
       flex-direction: column;
@@ -397,3 +387,43 @@ button {
   text-overflow: ellipsis;
   overflow: hidden;
   margin: 0; }
+
+.delay-1 {
+  animation: appear 1s;
+  animation-delay: 0.1s; }
+
+.delay-2 {
+  animation: appear 1s;
+  animation-delay: 0.2s; }
+
+.delay-3 {
+  animation: appear 1s;
+  animation-delay: 0.3s; }
+
+.delay-4 {
+  animation: appear 1s;
+  animation-delay: 0.4s; }
+
+.delay-5 {
+  animation: appear 1s;
+  animation-delay: 0.5s; }
+
+.delay-6 {
+  animation: appear 1s;
+  animation-delay: 0.6s; }
+
+.delay-7 {
+  animation: appear 1s;
+  animation-delay: 0.7s; }
+
+.delay-8 {
+  animation: appear 1s;
+  animation-delay: 0.8s; }
+
+.delay-9 {
+  animation: appear 1s;
+  animation-delay: 0.9s; }
+
+.delay-10 {
+  animation: appear 1s;
+  animation-delay: 1s; }
