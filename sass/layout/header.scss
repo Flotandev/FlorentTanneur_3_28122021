@@ -1,20 +1,20 @@
 header {
-    font-family: "Shrikhand", cursive;
-    text-align: center;
-    box-shadow: 0em 0.15em 0.1em grey;
-    padding: 0rem;
-    position: relative;
-  }
-  .header_arrow{
-    position: absolute;
-    left: 2rem;
-    height: 2rem;
-    width: 2rem;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-    color: #000;
-  }
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0em 0.15em 0.1em grey;
+  padding: 0rem;
+  position: relative;
+}
+.header_arrow {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #000;
+}

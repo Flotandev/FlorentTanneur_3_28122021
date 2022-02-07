@@ -6,15 +6,15 @@
   border-radius: 2rem;
   background-image: linear-gradient(#ff79da, #9356dc);
   margin-top: 0.5rem;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 
   &:hover {
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
-    filter: brightness(1.2);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
   }
 }
 
 @mixin box-shadow {
-    box-shadow: 4px 4px 4px #7e7e7e;
+  box-shadow: 4px 4px 4px #7e7e7e;
 }

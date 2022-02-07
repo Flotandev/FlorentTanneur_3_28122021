@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass ./main/main.scss ./main/main.css",
-    "watch": "node-sass ./main/main.scss ./main/main.css -w"
+    "compile": "node-sass ./sass/main.scss ./css/main.css",
+    "watch": "node-sass ./sass/main.scss ./css/main.css -w",
+    "prefix" : "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
