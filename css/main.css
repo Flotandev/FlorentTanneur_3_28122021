@@ -59,7 +59,7 @@ h1 {
     transform: translateY(100%);
     opacity: 0; }
   100% {
-    transform: translateY(0);
+    transform: translateY(0%);
     opacity: 1; } }
 
 .city {
@@ -243,7 +243,7 @@ header {
         transition-duration: 0.75s; }
       .menus .card_description .fas:hover {
         opacity: 1;
-        transform: scale(1.1) translateY(-45%); }
+        transform: scale(1.1) translateY(-45%) translateX(-1%); }
 
 a {
   text-decoration: none;
@@ -446,13 +446,13 @@ button {
 
 .heart-fas {
   color: transparent;
-  background-image: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc);
   opacity: 0;
   transition: 0.5s;
   transition-duration: 0.75s; }
 
 .heart-fas:hover {
   opacity: 1;
-  transform: scale(1.1) translateY(-45%); }
+  transform: scale(1.1) translateY(-45%) translateX(-1%); }

@@ -144,14 +144,14 @@ button {
   }
 }
 
-.heart-far{
+.heart-far {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
-.heart-fas{
+.heart-fas {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
@@ -161,14 +161,14 @@ button {
 
 .heart-fas {
   color: transparent;
-  background-image: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
+  background-image: linear-gradient(#ff79da, #9356dc);
   opacity: 0;
   transition: 0.5s;
   transition-duration: 0.75s;
 }
 .heart-fas:hover {
   opacity: 1;
-  transform: scale(1.1) translateY(-45%);
+  transform: scale(1.1) translateY(-45%) translateX(-1%);
 }
